@@ -1,0 +1,32 @@
+{
+  "name": "metabroker",
+  "version": "0.1.0",
+  "description": "Unified pub-sub API for message broker of your choice: Redis, RabbitMQ (AMQP), ActiveMQ (STOMP)",
+  "main": "index.js",
+  "keywords": [
+    "pub-sub",
+    "broker",
+    "Redis",
+    "RabbitMQ",
+    "AMQP",
+    "ActiveMQ",
+    "STOMP"
+  ],
+  "author": {
+    "name": "Vladimir Latyshev",
+    "email": "latysheff@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/latysheff/node-metabroker.git",
+  "dependencies": {
+    "amqp-connection-manager": "^1.3.7",
+    "amqplib": "^0.5.2",
+    "redis": "^2.8.0",
+    "stomp-client": "^0.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-plugin-prettier": "^2.1.2",
+    "prettier": "^1.5.2"
+  }
+}
