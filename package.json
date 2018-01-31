@@ -1,6 +1,6 @@
 {
   "name": "metabroker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unified pub-sub API for message broker of your choice: Redis, RabbitMQ (AMQP), ActiveMQ (STOMP)",
   "main": "index.js",
   "keywords": [
@@ -26,7 +26,24 @@
   },
   "devDependencies": {
     "eslint": "^4.1.1",
-    "eslint-plugin-prettier": "^2.1.2",
-    "prettier": "^1.5.2"
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "extends": ".eslintrc",
+    "overrides": [
+      {
+        "files": "test/*.js",
+        "rules": {
+          "max-len": [
+            "error",
+            {
+              "code": 300
+            }
+          ]
+        }
+      }
+    ]
   }
 }

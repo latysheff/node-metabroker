@@ -5,7 +5,7 @@ Application can utilize unified pub-sub interface and easily switch from one bro
 Actual modules implementing protocols are:
 
 * [redis]
-* [amqp-connection-manager] (wrapper for [amqplib])
+* [amqp-connection-manager] which itself is a wrapper for [amqplib]
 * [stomp-client]
 
 Module automatically reconnects and resubscribes in case of broker failure.
@@ -40,7 +40,7 @@ returns Broker instance
 
 callback(message)
 
-### broker.publish(queue, text)
+### broker.publish(queue, message[, headers])
 
 ### broker.disconnect()
 
